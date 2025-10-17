@@ -1,0 +1,217 @@
+.navbar {
+	display: block;
+	border: solid thin grey;
+	border-radius: 8px;
+	background-color: #f5f5f5;
+	width: 100%;
+  margin:10 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.menu{
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.menu-btn {
+  display: inline-block;
+	padding: 10px 20px;
+  margin: 0 auto;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.menu-btn:hover {
+	color: green;
+  border: solid thin grey;
+}
+
+.menu-btn.active {
+	color: green;
+	font-size: 20px;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.container{
+      width: 80%;
+      overflow: hidden;
+      margin-top: 15px;
+      margin: auto;
+    }
+
+
+ .container-up{
+      width: 80%;
+      height: 600px;
+      overflow: hidden;
+      margin-top: 15px;
+      margin: auto;
+    }
+
+
+  .up-first{
+    display: inline;
+    width:50%;
+    height: 100%;
+    overflow: hidden;
+    float:left;
+  }
+  .up-second{
+    display: inline;
+    width:50%;
+    height: 50%;
+    overflow: hidden;
+    float:left;
+  }
+
+  .container-up img{
+    width: 100%;
+    height: 100%;
+}
+  
+
+    .left {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+	.left img{
+		width: 100%;
+		border-radius: 8px;
+	}
+
+    .main {
+      float: left;
+      width: 55%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .right {
+      float: right;
+      width: 20%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+	.right img{
+		width: 100%;
+		border-radius: 8px;
+	}
+
+    .block {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .block img {
+      width: 100%;
+      border-radius: 8px;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .top {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+
+    .top img {
+      width: 48%;
+      float: left;
+      margin-right: 2%;
+      border-radius: 8px;
+    }
+
+    .top img:last-child {
+      margin-right: 0;
+    }
+
+    .middle {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+
+    .middle img {
+      width: 48%;
+      float: left;
+      margin-right: 2%;
+      border-radius: 8px;
+    }
+
+    .middle img:last-child {
+      margin-right: 0;
+    }
+
+    .cards {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      float: left;
+      width: 48%;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      padding: 10px;
+      margin-right: 2%;
+    }
+
+    .card:last-child {
+      margin-right: 0;
+    }
+
+    .card img {
+      width: 20%;
+      height: 20%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 8px 0 5px;
+    }
+
+    .bottom {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      overflow: hidden;
+      clear: both;
+    }
+
+    .bottom img {
+      float: right;
+      width: 20%;
+      height: 20%;
+      margin-left: 10px;
+      border-radius: 8px;
+    }
+
+    .bottom h3 {
+      margin-top: 0;
+    }
+
+    .clear {
+      clear: both;
+    }
