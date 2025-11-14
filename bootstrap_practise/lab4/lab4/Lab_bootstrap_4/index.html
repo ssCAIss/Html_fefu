@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Топ высотных зданий</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /* 4) все абзацы .lead выровнены по ширине */
+        .lead {
+            text-align: justify;
+        }
+
+        /* 5) на экранах до sm включительно .lead = 1rem */
+        @media (max-width: 575.98px) {
+            .lead {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md bg-light navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Топ высотных зданий</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Переключить навигацию">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Список зданий</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Найти" aria-label="Найти">
+                        <button class="btn btn-outline-success" type="submit">Найти</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="my-3">
+
+        <!-- Широкий контейнер галереи -->
+        <div class="container-xxl">
+            <div class="row gy-3 gx-5 justify-content-center text-center mb-4">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img class="img-fluid img-thumbnail d-block mx-auto" src="images/image1.jpg" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img class="img-fluid img-thumbnail d-block mx-auto" src="images/image2.jpg" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img class="img-fluid img-thumbnail d-block mx-auto" src="images/image3.jpg" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img class="img-fluid img-thumbnail d-block mx-auto" src="images/image4.jpg" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img class="img-fluid img-thumbnail d-block mx-auto" src="images/image5.jpg" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img class="img-fluid img-thumbnail d-block mx-auto" src="images/image6.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- полоса в ширину галереи -->
+            <hr class="my-4">
+        </div>
+
+        <!-- Более узкий контейнер для статей -->
+        <div class="container-lg">
+
+            <!-- 1-я статья -->
+            <section class="mb-5">
+                <div class="row align-items-start">
+                    <div class="col-md-9">
+                        <h2>
+                            CN Tower, <span class="text-muted">Торонто, Канада</span>
+                        </h2>
+                        <p class="lead">
+                            553,3-метровая телевизионная башня. Была самым высоким свободно стоящим сооружением в мире
+                            с 1976 по 2007 год, а также до сих пор остаётся таковым в Западном полушарии. Является
+                            символом
+                            Торонто.
+                        </p>
+                        <p class="lead">
+                            Земляные работы для сооружения железобетонной конструкции с последующим натяжением арматуры
+                            весом 130&nbsp;000&nbsp;т начались 12 февраля 1973&nbsp;г., а уже 2 апреля 1975&nbsp;г.
+                            возведение башни было завершено.
+                        </p>
+                        <p class="lead">
+                            Башня используется для телекоммуникационных нужд. Кроме того, башня используется как
+                            обзорная
+                            площадка. Также на башне имеется вращающийся ресторан.
+                        </p>
+                        <p class="lead">
+                            На высоте 447&nbsp;м находится астрономическая обсерватория.
+                        </p>
+                    </div>
+
+                    <!-- картинка по центру на маленьких экранах -->
+                    <div class="col-md-3 d-flex justify-content-md-end justify-content-center mt-3 mt-md-0">
+                        <img src="images/image9.jpg" class="img-fluid img-thumbnail d-block mx-auto" alt="CN Tower">
+                    </div>
+                </div>
+            </section>
+
+            <!-- полоса между статьями -->
+            <hr class="my-4">
+
+            <!-- 2-я статья -->
+            <section class="mb-5">
+                <div class="row align-items-start">
+                    <!-- картинка: на больших экранах слева, на маленьких — под текстом -->
+                    <div
+                        class="col-md-3 d-flex justify-content-md-start justify-content-center mt-3 mt-md-0 order-md-1 order-2">
+                        <img src="images/image10.jpg" class="img-fluid img-thumbnail d-block mx-auto"
+                            alt="Бурдж-Халифа">
+                    </div>
+
+                    <div class="col-md-9 order-md-2 order-1">
+                        <h2>
+                            Бурдж-Халифа, <span class="text-muted">Дубай, ОАЭ</span>
+                        </h2>
+                        <p class="lead">
+                            Небоскрёб высотой 828 метров, самое высокое сооружение в мире. Форма здания напоминает
+                            сталагмит.
+                        </p>
+                        <p class="lead">
+                            Строительство небоскрёба началось в 2004 году и шло со скоростью 1—2 этажа в неделю.
+                            Ежедневно на строительстве работало до 12&nbsp;000 рабочих. На его создание ушло около
+                            320&nbsp;тыс.&nbsp;м³ бетона и более 60&nbsp;тыс.&nbsp;тонн стальной арматуры. Бетонные
+                            работы
+                            были завершены после возведения 160 этажа, далее шла сборка 180-метрового шпиля из
+                            металлических конструкций.
+                        </p>
+                        <p class="lead">
+                            Специально для «Бурдж-Халифа» была разработана особая марка бетона, который выдерживает
+                            температуру до +50&nbsp;°C.
+                        </p>
+                        <p class="lead">
+                            Бетонную смесь укладывали только ночью, а в раствор добавляли лёд.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- полоса между статьями -->
+            <hr class="my-4">
+
+            <!-- 3-я статья -->
+            <section class="mb-5">
+                <div class="row align-items-start">
+                    <div class="col-md-9">
+                        <h2>
+                            Небесное дерево, <span class="text-muted">Токио, Япония</span>
+                        </h2>
+                        <p class="lead">
+                            Телевизионная башня в районе Сумида — самая высокая среди телебашен мира. Высота телебашни
+                            вместе с антенной составляет 634 метра.
+                        </p>
+                        <p class="lead">
+                            Высота башни была выбрана так, чтобы цифры: 6 (на старом японском «му»), 3 («са»), 4 («си»)
+                            были созвучны «Мусаси» — названию исторической области, где находится современный Токио.
+                        </p>
+                        <p class="lead">
+                            Здание напоминает пятиярусную пагоду, что хорошо сочетается с историческим районом Асакуса
+                            на другом берегу реки. Основание башни напоминает штатив; с высоты примерно 350&nbsp;м она
+                            имеет цилиндрическую форму, позволяющую наслаждаться панорамными видами реки и города.
+                        </p>
+                        <p class="lead">
+                            Имеются две наблюдательные площадки: одна на высоте 350&nbsp;м (вместимостью 2000 человек),
+                            другая на высоте 450&nbsp;м (вместимостью 900 человек).
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 d-flex justify-content-md-end justify-content-center mt-3 mt-md-0">
+                        <img src="images/image11.jpg" class="img-fluid img-thumbnail d-block mx-auto"
+                            alt="Небесное дерево">
+                    </div>
+                </div>
+            </section>
+
+            <!-- полоса перед футером -->
+            <hr class="my-4">
+        </div>
+    </main>
+
+    <footer class="bg-light py-3 mt-4">
+        <div class="container">
+            <div class="row small">
+                <div class="col-md-6 text-md-start text-center">
+                    &copy; 2025 Чуев Александр Б9123-09.03.04
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

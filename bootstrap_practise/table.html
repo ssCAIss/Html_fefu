@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport"
+                        content="width=device-width, initial-scale=1.0">
+                <title>Список лучших игр жанра стратегия</title>
+        </head>
+        <body>
+                <a href="index.html">Топ лучших игр жанра стратегия</a><br>
+                <a href="table.html">Список самых лучших игр жанра стратегия</a>
+                <hr>
+                <details>
+                        <summary>График продаж</summary>
+                        <strong>Ось X
+                                (категория)</strong>
+                        <strong>Ось Y
+                                (значение)</strong>
+                        <br>
+                        <input type="radio"
+                                name="graph-axis"
+                                id="theme">
+                        Тема
+                        <input type="checkbox" name="graph-yaxis" id="graph1">
+                        Количество проданных копий
+                        <br>
+                        <input type="radio"
+                                name="graph-axis"
+                                id="country">
+
+                        Автор
+                        <input type="checkbox" name="graph-yaxis" id="graph2">
+                        Общая
+                        выручка
+                        <br>
+
+                        <input type="radio"
+                                name="graph-axis"
+                                id="year"> Год
+                        выпуска
+                        <input type="checkbox" name="graph-yaxis" id="graph3">
+                        Средний
+                        рейтинг
+                        <br>
+                        <button>Построить график</button>
+                </details>
+
+                <details>
+                        <summary>Фильтр</summary>
+                        Категория Выбор<br>
+                        Название
+                        <input type="text" name="theme" id="theme1"
+                                placeholder="Название..."><br>
+                        Жанр
+                        <input type="text" name="theme" id="theme2"
+                                placeholder="Тема..."><br>
+                        Страна
+                        <select>
+                                <option>Все</option>
+                                <option>США</option>
+                                <option>Великобритания</option>
+                                <option>Германия</option>
+                                <option>Швеция</option>
+                                <option>Канада</option>
+                                <option>Болгария</option>
+                                <option>Австралия</option>
+                                <option>Финляндия</option>
+                                <option>Франция</option>
+                                <option>Нидерланды</option>
+                        </select><br>
+                        Год выпуска
+                        <label>от</label>
+                        <input type="number"
+                                id="year1"
+                                min="1980"
+                                max="2025"
+                                placeholder="1980">
+                        <label>до</label>
+                        <input type="number" id="year2" min="1981" max="2025"
+                                placeholder="2020">
+                        <br>
+                        Разработчик
+                        <input type="text" name="theme" id="theme3"
+                                placeholder="Автор..."><br>
+                        Цена
+                        <label>от</label>
+                        <input type="number"
+                                min="1"
+                                id="price1"
+                                placeholder="1">
+                        <label>до</label>
+                        <input type="number" max="9999" id="price2"
+                                placeholder="9999">
+                        <br>
+
+                        <button>Применить фильтр</button>
+                </details>
+
+                <details>
+                        <summary>Сортировка</summary>
+                        <strong>Первый
+                                уровень</strong>
+
+                        <select>
+                                <option>Нет</option>
+                                <option>Название</option>
+                                <option>Разработчик</option>
+                                <option>Год
+                                        выпуска</option>
+                                <option>Жанр</option>
+                                <option>Цена</option>
+                                <option>Страна</option>
+                        </select>
+
+                        <select>
+                                <option>по
+                                        убыванию</option>
+                                <option>по
+                                        возрастанию</option>
+                        </select>
+                        <br>
+                        <strong>Второй
+                                уровень</strong>
+
+                        <select>
+                                <option>Нет</option>
+                                <option>Название</option>
+                                <option>Разработчик</option>
+                                <option>Год
+                                        выпуска</option>
+                                <option>Жанр</option>
+                                <option>Цена</option>
+                                <option>Страна</option>
+                        </select>
+
+                        <select>
+                                <option>по
+                                        убыванию</option>
+                                <option>по
+                                        возрастанию</option>
+                        </select>
+                        <br>
+                        <strong>Третий
+                                уровень</strong>
+                        <select>
+                                <option>Нет</option>
+                                <option>Название</option>
+                                <option>Разработчик</option>
+                                <option>Год
+                                        выпуска</option>
+                                <option>Жанр</option>
+                                <option>Цена</option>
+                                <option>Страна</option>
+                        </select>
+
+                        <select>
+                                <option>по
+                                        убыванию</option>
+                                <option>по
+                                        возрастанию</option>
+                        </select>
+
+                        <br>
+                        <button>Сортировать</button>
+                </details>
+                <br>
+                <table border="1" cellpadding="8" cellspacing="0">
+  <tr>
+    <th>Название</th>
+    <th>Разработчик</th>
+    <th>Страна</th>
+    <th>Жанр</th>
+    <th>Год выхода</th>
+    <th>Цена (₽)</th>
+  </tr>
+  <tr>
+    <td>Age of Empires II</td>
+    <td>Ensemble Studios</td>
+    <td>США</td>
+    <td>RTS</td>
+    <td>1999</td>
+    <td>2000</td>
+  </tr>
+  <tr>
+    <td>Age of Empires II: Definitive Edition</td>
+    <td>World's Edge</td>
+    <td>США</td>
+    <td>RTS </td>
+    <td>2019</td>
+    <td>600</td>
+  </tr>
+  <tr>
+    <td>Age of Empires: Definitive Edition</td>
+    <td>Relic</td>
+    <td>Канада</td>
+    <td>RTS </td>
+    <td>2018</td>
+    <td>600</td>
+  </tr>
+  <tr>
+    <td>Age of Mythology</td>
+    <td>Ensemble Studios</td>
+    <td>США</td>
+    <td>RTS</td>
+    <td>2002</td>
+    <td>1600</td>
+  </tr>
+  <tr>
+    <td>StarCraft</td>
+    <td>Blizzard Entertainment</td>
+    <td>США</td>
+    <td>RTS</td>
+    <td>1998</td>
+    <td>2000</td>
+  </tr>
+  <tr>
+    <td>StarCraft II</td>
+    <td>Blizzard Entertainment</td>
+    <td>США</td>
+    <td>RTS</td>
+    <td>2010</td>
+    <td>1400</td>
+  </tr>
+  <tr>
+    <td>Command &amp; Conquer (Tiberian Dawn)</td>
+    <td>Westwood Studios</td>
+    <td>США</td>
+    <td>RTS</td>
+    <td>1995</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+    <td>Command &amp; Conquer: Red Alert</td>
+    <td>Westwood Studios</td>
+    <td>США</td>
+    <td>RTS</td>
+    <td>1996</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+    <td>Company of Heroes</td>
+    <td>Relic Entertainment</td>
+    <td>Канада</td>
+    <td>тактика</td>
+    <td>2006</td>
+    <td>1200</td>
+  </tr>
+  <tr>
+    <td>Company of Heroes 2</td>
+    <td>Relic Entertainment</td>
+    <td>Канада</td>
+    <td>тактика</td>
+    <td>2013</td>
+    <td>1300</td>
+  </tr>
+  <tr>
+    <td>Total War: Shogun 2</td>
+    <td>Creative Assembly</td>
+    <td>Великобритания</td>
+    <td>RTT</td>
+    <td>2011</td>
+    <td>1400</td>
+  </tr>
+  <tr>
+    <td>Total War: Rome II</td>
+    <td>Creative Assembly</td>
+    <td>Великобритания</td>
+    <td>тактика</td>
+    <td>2013</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+    <td>Total War: Warhammer</td>
+    <td>Creative Assembly</td>
+    <td>Великобритания</td>
+    <td>стратегия</td>
+    <td>2016</td>
+    <td>1700</td>
+  </tr>
+  <tr>
+    <td>Sid Meier’s Civilization III</td>
+    <td>MicroProse</td>
+    <td>США</td>
+    <td>пошаговая</td>
+    <td>2001</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+    <td>Sid Meier’s Civilization IV</td>
+    <td>Firaxis</td>
+    <td>США</td>
+    <td>пошаговая</td>
+    <td>2005</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+    <td>Sid Meier’s Civilization V</td>
+    <td>Firaxis</td>
+    <td>США</td>
+    <td>пошаговая</td>
+    <td>2010</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+    <td>Civilization VI</td>
+    <td>Firaxis</td>
+    <td>США</td>
+    <td>пошаговая</td>
+    <td>2016</td>
+    <td>1850</td>
+  </tr>
+  <tr>
+    <td>Crusader Kings II</td>
+    <td>Paradox Development Studio</td>
+    <td>Швеция</td>
+    <td>гранд-стратегия</td>
+    <td>2012</td>
+    <td>1050</td>
+  </tr>
+  <tr>
+    <td>Crusader Kings III</td>
+    <td>Paradox Development Studio</td>
+    <td>Швеция</td>
+    <td>гранд-стратегия</td>
+    <td>2020</td>
+    <td>2250</td>
+  </tr>
+  <tr>
+    <td>Europa Universalis IV</td>
+    <td>Paradox Development Studio</td>
+    <td>Швеция</td>
+    <td>гранд-стратегия</td>
+    <td>2013</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+    <td>Hearts of Iron IV</td>
+    <td>Paradox Development Studio</td>
+    <td>Швеция</td>
+    <td>гранд-стратегия</td>
+    <td>2016</td>
+    <td>1850</td>
+  </tr>
+  <tr>
+    <td>Stellaris</td>
+    <td>Paradox Interactive</td>
+    <td>Швеция</td>
+    <td>космическая гранд-стратегия</td>
+    <td>2016</td>
+    <td>1300</td>
+  </tr>
+  <tr>
+    <td>XCOM: Enemy Unknown</td>
+    <td>Firaxis</td>
+    <td>США</td>
+    <td>пошаговая тактика</td>
+    <td>2012</td>
+    <td>1200</td>
+  </tr>
+  <tr>
+    <td>XCOM 2</td>
+    <td>Firaxis</td>
+    <td>США</td>
+    <td>пошаговая тактика</td>
+    <td>2016</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+    <td>Homeworld</td>
+    <td>Relic Entertainment</td>
+    <td>Канада</td>
+    <td>космический RTS</td>
+    <td>1999</td>
+    <td>1700</td>
+  </tr>
+  <tr>
+    <td>Homeworld Remastered</td>
+    <td>Blackbird</td>
+    <td>Австралия</td>
+    <td>космический RTS</td>
+    <td>2015</td>
+    <td>800</td>
+  </tr>
+  <tr>
+    <td>Supreme Commander</td>
+    <td>Gas Powered Games</td>
+    <td>США</td>
+    <td>RTS</td>
+    <td>2007</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+    <td>Supreme Commander: Forged Alliance</td>
+    <td>Gas Powered Games</td>
+    <td>США</td>
+    <td>RTS </td>
+    <td>2007</td>
+    <td>1200</td>
+  </tr>
+  <tr>
+    <td>Sins of a Solar Empire</td>
+    <td>Ironclad Games</td>
+    <td>Канада</td>
+    <td>RTS</td>
+    <td>2008</td>
+    <td>1200</td>
+  </tr>
+  <tr>
+    <td>Anno 1404 (Dawn of Discovery)</td>
+    <td>Sunflowers</td>
+    <td>Германия</td>
+    <td>градостроительная стратегия</td>
+    <td>2009</td>
+    <td>1200</td>
+  </tr>
+  <tr>
+    <td>Anno 1800</td>
+    <td>Ubisoft</td>
+    <td>Германия</td>
+    <td>градостроительная стратегия</td>
+    <td>2019</td>
+    <td>1850</td>
+  </tr>
+  <tr>
+    <td>Tropico 5</td>
+    <td>Haemimont Games</td>
+    <td>Болгария</td>
+    <td>политическая стратегия</td>
+    <td>2014</td>
+    <td>1000</td>
+  </tr>
+  <tr>
+    <td>Tropico 6</td>
+    <td>Limbic</td>
+    <td>Германия</td>
+    <td>политическая стратегия</td>
+    <td>2019</td>
+    <td>1850</td>
+  </tr>
+  <tr>
+    <td>SimCity 4</td>
+    <td>Maxis</td>
+    <td>США</td>
+    <td>градостроительный сим</td>
+    <td>2003</td>
+    <td>1200</td>
+  </tr>
+  <tr>
+    <td>Cities: Skylines</td>
+    <td>Colossal Order</td>
+    <td>Финляндия</td>
+    <td>градостроительный сим</td>
+    <td>2015</td>
+    <td>1100</td>
+  </tr>
+  <tr>
+    <td>RimWorld</td>
+    <td>Ludeon Studios</td>
+    <td>Швеция</td>
+    <td>стратегия</td>
+    <td>2016 </td>
+    <td>650</td>
+  </tr>
+  <tr>
+    <td>Factorio</td>
+    <td>Wube Software</td>
+    <td>Чехия</td>
+    <td>строительство</td>
+    <td>2020 </td>
+    <td>1000</td>
+  </tr>
+  <tr>
+    <td>They Are Billions</td>
+    <td>Numantian Games</td>
+    <td>Испания</td>
+    <td>RTS</td>
+    <td>2017</td>
+    <td>600</td>
+  </tr>
+  <tr>
+    <td>Frostpunk</td>
+    <td>11 bit studios</td>
+    <td>Польша</td>
+    <td>градостроительная стратегия</td>
+    <td>2018</td>
+    <td>1050</td>
+  </tr>
+  <tr>
+    <td>Banished</td>
+    <td>Shining Rock Software</td>
+    <td>США</td>
+    <td>градостроение</td>
+    <td>2014</td>
+    <td>700</td>
+  </tr>
+  <tr>
+    <td>Heroes of Might &amp; Magic III</td>
+    <td>New World Computing</td>
+    <td>США</td>
+    <td>пошаговая стратегия</td>
+    <td>1999</td>
+    <td>1200</td>
+  </tr>
+  <tr>
+    <td>Age of Wonders III</td>
+    <td>Triumph Studios</td>
+    <td>Нидерланды</td>
+    <td>пошаговая стратегия</td>
+    <td>2014</td>
+    <td>1200</td>
+  </tr>
+  <tr>
+    <td>Endless Legend</td>
+    <td>Amplitude Studios</td>
+    <td>Франция</td>
+    <td>пошаговая стратегия</td>
+    <td>2014</td>
+    <td>1200</td>
+  </tr>
+  <tr>
+    <td>Endless Space 2</td>
+    <td>Amplitude Studios</td>
+    <td>Франция</td>
+    <td>космическая стратегия</td>
+    <td>2017</td>
+    <td>1200</td>
+  </tr>
+  <tr>
+    <td>Men of War</td>
+    <td>Digitalmindsoft</td>
+    <td>Германия</td>
+    <td>тактика</td>
+    <td>2009</td>
+    <td>1000</td>
+  </tr>
+  <tr>
+    <td>Company of Heroes: Opposing Fronts</td>
+    <td>Relic Entertainment</td>
+    <td>Канада</td>
+    <td>RTS </td>
+    <td>2007</td>
+    <td>550</td>
+  </tr>
+  <tr>
+    <td>Dawn of War</td>
+    <td>Relic Entertainment</td>
+    <td>Канада</td>
+    <td>RTS </td>
+    <td>2004</td>
+    <td>1200</td>
+  </tr>
+  <tr>
+    <td>Battle for Middle-earth II</td>
+    <td>EA</td>
+    <td>США</td>
+    <td>RTS </td>
+    <td>2006</td>
+    <td>1200</td>
+  </tr>
+  <tr>
+    <td>Stronghold</td>
+    <td>Firefly Studios</td>
+    <td>Великобритания</td>
+    <td>экономическая стратегия</td>
+    <td>2001</td>
+    <td>1200</td>
+  </tr>
+  <tr>
+    <td>Planetary Annihilation</td>
+    <td>Uber Entertainment</td>
+    <td>США</td>
+    <td>RTS</td>
+    <td>2014</td>
+    <td>1200</td>
+  </tr>
+</table>
+        </body>
+</html>

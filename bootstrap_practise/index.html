@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Макет</title>
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap.min.css">
+  <style>
+    .img-box {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 6px;
+    }
+    .img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+
+    .side-img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: 6px;
+    }
+    .side-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+
+    .carousel-item .img-box {
+      aspect-ratio: 21 / 9;
+    }
+
+    .navbar-nav {
+      margin: 0 auto;
+    }
+    .navbar-nav .nav-item :active  {
+  border: 2px solid black;
+  color: green;
+
+}
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <div class="collapse navbar-collapse show" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item mx-3 active"><a class="nav-link fw-bold" href="index.html">Главная</a></li>
+          <li class="nav-item mx-3"><a class="nav-link fw-bold" href="table.html">Таблица</a></li>
+          <li class="nav-item mx-3"><a class="nav-link fw-bold" href="#">Меню 3</a></li>
+          <li class="nav-item mx-3"><a class="nav-link fw-bold" href="#">Меню 4</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExample" class="carousel slide my-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="img-box">
+          <img src="img/HoE2.jpg" alt="Слайд 1">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="img-box">
+          <img src="img/AoE2.jpg" alt="Слайд 2">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="img-box">
+          <img src="img/StarCraft 2.jpg" alt="Слайд 3">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <div class="border rounded p-2 mb-3 text-center">
+          <div class="side-img mb-2">
+            <img src="img/XCom2.jpg" alt="">
+          </div>
+          <h6>Заголовок</h6>
+          <p class="small">Текст...</p>
+        </div>
+        <div class="border rounded p-2 mb-3 text-center">
+          <div class="side-img mb-2">
+            <img src="img/AoE2.jpg" alt="">
+          </div>
+          <h6>Заголовок</h6>
+          <p class="small">Текст...</p>
+        </div>
+        <div class="border rounded p-2 mb-3 text-center">
+          <div class="side-img mb-2">
+            <img src="img/HoE2.jpg" alt="">
+          </div>
+          <h6>Заголовок</h6>
+          <p class="small">Текст...</p>
+        </div>
+        <div class="border rounded p-2 mb-3 text-center">
+          <div class="side-img mb-2">
+            <img src="img/StarCraft 2.jpg" alt="">
+          </div>
+          <h6>Заголовок</h6>
+          <p class="small">Текст...</p>
+        </div>
+      </div>
+
+      <div class="col-8">
+        <div class="row mb-4">
+          <div class="col-6">
+            <div class="border rounded p-3 text-center h-100">
+              <div class="img-box mb-3">
+                <img src="img/XCom2.jpg" alt="">
+              </div>
+              <h5>Заголовок</h5>
+              <p>XCOM 2 — тактическая пошаговая стратегия, в которой человечество проиграло войну с пришельцами. Игрок возглавляет подпольную организацию XCOM, сражающуюся за освобождение Земли.
+Игра сочетает глубокие тактические сражения с управлением базой</p>
+              <div class="text-start">
+                <a href="page5.html" class="btn btn-primary btn-sm">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="border rounded p-3 text-center h-100">
+              <h5>Заголовок</h5>
+              <p>Hearts of Iron IV — глобальная стратегия о Второй мировой войне, где игрок может возглавить любую страну мира — от великих держав до малых наций — и изменить ход истории.
+В игре нет фиксированных сценариев</p>
+              <div class="img-box mt-3 mb-3">
+                <img src="img/HoE2.jpg" alt="">
+              </div>
+              <div class="text-end">
+                <a href="page4.html" class="btn btn-primary btn-sm">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border rounded p-3 mb-4">
+          <h6>Заголовок</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="mb-0">Age of Empires II: The Age of Kings — классическая историческая стратегия в реальном времени, в которой игрок строит цивилизацию от раннего Средневековья до эпохи рыцарей и осадных машин.
+Игра включает 13 наций</p>
+            <div class="img-box" style="width: 200px;">
+              <img src="img/AoE2.jpg" alt="">
+            </div>
+          </div>
+          <a  class="btn btn-primary btn-sm mt-3" href="page3.html">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="col-2">
+        <div class="border rounded p-2 mb-3 text-center">
+          <div class="side-img mb-2">
+            <img src="img/StarCraft 2.jpg" alt="">
+          </div>
+          <h6>Заголовок</h6>
+          <p class="small">Текст...</p>
+        </div>
+        <div class="border rounded p-2 mb-3 text-center">
+          <div class="side-img mb-2">
+            <img src="img/AoE2.jpg" alt="">
+          </div>
+          <h6>Заголовок</h6>
+          <p class="small">Текст...</p>
+        </div>
+        <div class="border rounded p-2 mb-3 text-center">
+          <div class="side-img mb-2">
+            <img src="img/XCom2.jpg" alt="">
+          </div>
+          <h6>Заголовок</h6>
+          <p class="small">Текст...</p>
+        </div>
+        <div class="border rounded p-2 mb-3 text-center">
+          <div class="side-img mb-2">
+            <img src="img/HoE2.jpg" alt="">
+          </div>
+          <h6>Заголовок</h6>
+          <p class="small">Текст...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
